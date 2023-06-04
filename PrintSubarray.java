@@ -17,7 +17,7 @@ public class PrintSubarray
 					System.out.print(arr[k]+" ");
 				}
 				totsubarray++;
-				System.out.println("  =  "+sum);
+				System.out.println("  =  "+sum);   //print the sum of subarray
 			}
 			System.out.println();
 		}
