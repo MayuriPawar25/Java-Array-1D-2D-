@@ -7,20 +7,21 @@ public class PrintSubarray
 		for(int i=0; i<arr.length; i++)
 		{
 			int start=i;
+			int sum=0;
 			for(int j=i; j<arr.length; j++)
 			{
 				int end=j;
+				sum+=arr[j];
 				for(int k=start; k<=end; k++)
 				{
 					System.out.print(arr[k]+" ");
 				}
 				totsubarray++;
-				System.out.println();
+				System.out.println("  =  "+sum);
 			}
 			System.out.println();
 		}
 		System.out.println("Total Subarrays: "+totsubarray);
-
 	}
 	public static void main(String[] args)
 	{
